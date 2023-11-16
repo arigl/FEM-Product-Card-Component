@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [FEM solution page](https://www.frontendmentor.io/solutions/product-preview-card-html-and-css-only-_OkQivsTM2)
 - Live Site URL: [Live Site](https://arigl.github.io/FEM-Product-Card-Component/)
 
 ## My process
