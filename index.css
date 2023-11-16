@@ -1,0 +1,142 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+  
+body {
+    background-color: blanchedalmond;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Aligns content horizontally */
+    align-items: center; /* Aligns content vertically */
+    height: 100vh; /* Makes the body full height of the viewport */
+}
+  
+main {
+    display: flex;
+    background-color: white;
+    width: 60vw;
+    margin: 10vw;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 3.0vw;
+    margin: 1rem;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+}
+
+h1 span {
+    color: black;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1vw;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+p {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin: 1rem;
+    opacity: 0.5;
+}
+
+.text--header {
+    font-size: 1.25vw;
+    letter-spacing: 0.2em;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: white;
+    margin: 1rem;
+    font-size: 1.3vw; /* Using viewport width units for font size */
+    padding: 1.0rem 1.5rem; /* Adjust padding accordingly */
+    border: none;
+    border-radius: 5px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+  
+.img {
+    width: 30vw;
+    height: 45vw;
+    border-radius: 20px 0px 0px 20px;
+}
+  
+.description {
+    width: 30vw;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vw; /* Using viewport width units for padding */
+}
+  
+  /* Media query for smaller screens */
+@media screen and (max-width: 950px) {
+    main {
+      width: 90vw;
+      height: 90vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .img, .description {
+      width: 100%;
+      height: auto;
+    }
+
+    .img {
+      border-radius: 20px 20px 0px 0px;
+      object-fit: cover;
+      height: 30vh;
+    }
+
+    .description {
+      height: 60vh;
+      padding: 5vw;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h1 span {
+        font-size: 2vw;
+    }
+
+    .text--header {
+        font-size: 3vw;
+    }
+    p {
+        font-size: 3.5vw;
+    }
+
+    button {
+        font-size: 3vw;
+    }
+}
+  
